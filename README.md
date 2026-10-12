@@ -17,7 +17,26 @@ TypeScript · Bun · shell · C#
 - **Prove it on the real path.** An end-to-end run beats a test that restates the code.
 - **An agent needs rules it cannot remove.** Guardrails sit outside the agent, in hooks, commits and CI.
 
-[33 more lines]
+## What I build
+
+```mermaid
+flowchart LR
+  shell-ast["shell-ast<br>parse shell before it runs"] --> hook-kit["hook-kit<br>agent hooks as one binary"]
+  hook-kit --> ai-guardrails["ai-guardrails<br>rules agents can't weaken"]
+  shell-ast --> ai-guardrails
+  feats["feats<br>BDD tests for Bun"] -. tests .-> hook-kit
+  feats -. tests .-> ai-guardrails
+```
+
+| Repo | What it does |
+| --- | --- |
+| [ai-guardrails](https://github.com/Questi0nM4rk/ai-guardrails) | Hooks, a commit gate and a CI check that flag when a coding agent weakens a project's own lint and hook rules. |
+| [hook-kit](https://github.com/Questi0nM4rk/hook-kit) | Builds coding-agent hooks into one compiled binary that decides through stdout, stderr and the exit code. |
+| [shell-ast](https://github.com/Questi0nM4rk/shell-ast) | A typed AST for bash, POSIX sh and mksh, so a tool can read a command before it runs. |
+| [feats](https://github.com/Questi0nM4rk/feats) | A BDD runner that turns Gherkin feature files into typed `bun:test` suites. |
+| [tagen](https://github.com/Questi0nM4rk/tagen) | Resolves a query against a catalog of skill cards and returns the matching set as a manifest. |
+| [vori](https://github.com/Questi0nM4rk/vori) | Queries Obsidian-style markdown vaults from the terminal: tags, wikilinks, full text. |
+
 **Experiments:** [codebase-mcp](https://github.com/Questi0nM4rk/codebase-mcp) was my first try at code retrieval for agents. It taught me where over-engineering starts, and its README says so.
 
 ## Away from the terminal
