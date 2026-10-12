@@ -38,7 +38,7 @@ flowchart LR
   A --> C
   D["🥒 feats<br/>BDD tests for Bun"] -. tests .-> B
   D -. tests .-> C
-  B --> E["🧰 qsm-marketplace<br/>27 Claude Code plugins"]
+  B --> E["🧰 qsm-marketplace<br/>Claude Code plugins"]
   F["🤖 cc-review<br/>Claude reviews my PRs"] -. reviews .-> C
 ```
 
@@ -47,7 +47,7 @@ flowchart LR
 <td width="50%" valign="top">
 
 ### 🧰 [qsm-marketplace](https://github.com/Questi0nM4rk/qsm-marketplace)
-My daily Claude Code setup as a marketplace of 27 small plugins: skills, agents, hooks and CLI tools that help an agent see, verify and evaluate its own work.
+My daily Claude Code setup as a marketplace of small plugins: skills, agents, hooks and CLI tools that help an agent see, verify and evaluate its own work.
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square) ![license](https://img.shields.io/github/license/Questi0nM4rk/qsm-marketplace?style=flat-square&color=555)
 
