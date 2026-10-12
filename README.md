@@ -125,7 +125,7 @@ Queries Obsidian-style markdown vaults from the terminal: tags, wikilinks, full 
 
 - 🃏 I do cardistry and card tricks.
 - 🌀 I obsess over a random new thing for a month, then forget what I did a week later.
-- 🔧 I like building my own stuff and owning the tools I use.
+- 🔧 I like owning my tools, so I build them. Even my desktop is my own: [qsm-desktop](https://github.com/Questi0nM4rk/qsm-desktop) is a Quickshell shell for Hyprland, built on the [qsm-shell](https://github.com/Questi0nM4rk/qsm-shell) component library and previewed in [qsm-workbench](https://github.com/Questi0nM4rk/qsm-workbench).
 - ⌨️ I type on a split Dactyl I built myself, running ZMK on nice!nano v2 boards: [zmk-config-lozor](https://github.com/Questi0nM4rk/zmk-config-lozor).
 
 <br clear="right">
